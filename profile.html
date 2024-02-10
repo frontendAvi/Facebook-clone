@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyBook</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">
+            <h2 class="logo">MyBook</h2>
+    </a>
+        <ul>
+          <li><img src="images/notification.png" alt="" /></li>
+          <li><img src="images/inbox.png" alt="" /></li>
+          <li><img src="images/video.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" placeholder="Search.." />
+        </div>
+        <div class="nav-user-icon online" onclick="settingMenuToggle()">
+          <img src="images/profile-pic.png" />
+        </div>
+      </div>
+
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="setting-menu-inner">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="" id="dp" />
+            <div>
+              <p>Abhishek Yadav</p>
+              <a href="profile.html">See your profiles</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="images/feedback.png" alt="" id="dp" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve new design</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="setting-links">
+            <img src="images/setting.png" class="settings-icon" />
+            <a href="#"
+              >Setings & Privacy <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help & Support <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/display.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/logout.png" class="settings-icon" />
+            <a href="#">Logout<img src="images/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="profile-container">
+      <img src="images/cover.png" class="cover-img" alt="" />
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="images/profile.png" class="pd-img" alt="" />
+            <div>
+              <h3>Jack Nichola</h3>
+              <p>120 Friends - 20 mutual</p>
+              <img src="images/member-1.png" />
+              <img src="images/member-2.png" />
+              <img src="images/member-3.png" />
+              <img src="images/member-4.png" />
+            </div>
+          </div>
+        </div>
+        <div class="pd-right">
+          <button type="button">
+            <img src="images/add-friends.png" alt="" />Friend
+          </button>
+          <button type="button">
+            <img src="images/message.png" alt="" />Message
+          </button>
+          <br />
+          <a href="#"><img src="images/more.png" alt="" /></a>
+        </div>
+      </div>
+    
+    <div class="profile-info">
+      <div class="info-col">
+        <div class="profile-intro">
+          <h3>Intro</h3>
+          <p class="intro-text">Believe in yourself and you can di unbelievable things. <img src="images/feeling.png" alt=""></p>
+          <hr>
+          <ul>
+            <li><img src="images/profile-job.png" alt="">Director at 99media Ltd</li>
+            <li ><img src="images/profile-study.png" alt="">Studies at Amity Universty</li>
+            <li> <img src="images/profile-study.png" alt="">Went to DPS Delhi </li>
+            <li><img src="images/profile-home.png" alt="">Lives in Delhi, India</li>
+            <li><img src="images/profile-location.png" alt="">From Delhi, India</li>
+          </ul>
+        </div>
+        <div class="profile-intro">
+           <div class="title-box">
+            <h3>Photos</h3>
+            <a href="#">All Photos</a>
+           </div>
+            <div class="photo-box">
+                <div><img src="images/photo1.png"></div>
+                <div><img src="images/photo2.png"></div>
+                <div><img src="images/photo3.png"></div>
+                <div><img src="images/photo4.png"></div>
+                <div><img src="images/photo5.png"></div>
+                <div><img src="images/photo6.png"></div>
+            </div>
+        </div>
+
+        <div class="profile-intro">
+            <div class="title-box">
+             <h3>Friends</h3>
+             <a href="#">All Friends</a>
+            </div>
+            <p>120 (10 mutual)</p>
+             <div class="friends-box">
+                 <div><img src="images/member-1.png"><p>Joseph N</p></div>
+                 <div><img src="images/member-2.png"><p>Nathon N</p></div>
+                 <div><img src="images/member-3.png"><p>George D</p></div>
+                 <div><img src="images/member-4.png"><p>Francis L</p></div>
+                 <div><img src="images/member-5.png"><p>Anthony E</p></div>
+                 <div><img src="images/member-6.png"><p>Michael A</p></div>
+                 <div><img src="images/member-7.png"><p>Frinklin G</p></div>
+                 <div><img src="images/member-8.png"><p>Brandon C</p></div>
+                 <div><img src="images/member-9.png"><p>Keven Y</p></div>
+             </div>
+         </div>
+
+
+      </div>
+      <div class="post-col">
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="" id="dp" />
+            <div>
+              <p>Abhishek Yadav</p>
+              <small>Public <i class="fa-solid fa-caret-down"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea placeholder="What's on your mind?" rows="3"></textarea>
+
+            <div class="add-post-link">
+              <a href="#"
+                ><img src="images/live-video.png" alt="" />Live Video</a
+              >
+              <a href="#"><img src="images/photo.png" alt="" />Photos/Video</a>
+              <a href="#"
+                ><img src="images/feeling.png" alt="" />Feeling/Activity</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="post--container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" id="dp" />
+              <div>
+                <p>Abhishek Yadav</p>
+                <span> Nov 3 2023, 18:00pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Hello Everyone... i am <span>Abhishek</span> & new user
+            <a href="#">#WebDevloper</a> <a href="#">#FrontEnd</a>
+          </p>
+          <img src="images/feed-image-1.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" /> 235</div>
+              <div><img src="images/comments.png" /> 143</div>
+              <div><img src="images/share.png" /> 75</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt="" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post--container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" id="dp" />
+              <div>
+                <p>Abhishek Yadav</p>
+                <span> Nov 3 2023, 18:00pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Hello Everyone... i am <span>Abhishek</span> & new user
+            <a href="#">#WebDevloper</a> <a href="#">#FrontEnd</a>
+          </p>
+          <img src="images/feed-image-2.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" /> 235</div>
+              <div><img src="images/comments.png" /> 143</div>
+              <div><img src="images/share.png" /> 75</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt="" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post--container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" id="dp" />
+              <div>
+                <p>Abhishek Yadav</p>
+                <span> Nov 3 2023, 18:00pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Hello Everyone... i am <span>Abhishek</span> & new user
+            <a href="#">#WebDevloper</a> <a href="#">#FrontEnd</a>
+          </p>
+          <img src="images/feed-image-3.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" /> 235</div>
+              <div><img src="images/comments.png" /> 143</div>
+              <div><img src="images/share.png" /> 75</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt="" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post--container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" id="dp" />
+              <div>
+                <p>Abhishek Yadav</p>
+                <span> Nov 3 2023, 18:00pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Hello Everyone... i am <span>Abhishek</span> & new user
+            <a href="#">#WebDevloper</a> <a href="#">#FrontEnd</a>
+          </p>
+          <img src="images/feed-image-4.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" /> 235</div>
+              <div><img src="images/comments.png" /> 143</div>
+              <div><img src="images/share.png" /> 75</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt="" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post--container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" id="dp" />
+              <div>
+                <p>Abhishek Yadav</p>
+                <span> Nov 3 2023, 18:00pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Hello Everyone... i am <span>Abhishek</span> & new user
+            <a href="#">#WebDevloper</a> <a href="#">#FrontEnd</a>
+          </p>
+          <img src="images/feed-image-5.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" /> 235</div>
+              <div><img src="images/comments.png" /> 143</div>
+              <div><img src="images/share.png" /> 75</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt="" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        
+</div>
+    <div class="footer">
+      <p>Copyright 2023 - <span>Abhishek Yadav</span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
